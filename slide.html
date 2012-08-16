@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>slide</title>
+		<meta name="author" content="Winda Tang" />
+		<script type="text/javascript" src="slide.js"></script>
+	</head>
+<style type="text/css">
+body{margin:0;padding:0;height:748px;width:1024px;background:url(img/bg.jpg) repeat;}
+.wrap{height:748px;width:1024px;overflow:hidden;}
+ul.keynote{height:748px;margin:0;padding:0;width:99999px;list-style:none;}
+ul.keynote>li{height:748px;width:1024px; margin:0;padding:0;float:left;list-style:none;box-shadow:0 0 2px 2px rgba(0,0,0,0.2);}
+ul.keynote>li>div{height:748px; line-height:748px; width:100%;  font-size: 40px; text-align: center}
+</style>
+
+	<body>
+		<!-- wrap  的宽度为屏幕宽度||显示窗口的宽度-->
+		<div class="wrap">
+		<!--默认样式-->
+		<ul id="keynote" class="keynote">
+			<li class="keynote_li keynote_li1"><div style="background: #ffffdd;">1</div></li>
+			<li class="keynote_li keynote_li2"><div style="background: #ddffff;">2</div></li>
+			<li class="keynote_li keynote_li3"><div style="background: #ffddff;">3</div></li>
+			<li class="keynote_li keynote_li4"><div style="background: #eeffcc;">4</div></li>
+			<li class="keynote_li keynote_li5"><div style="background: #ffcc99;">5</div></li>
+		</ul>
+		<script type="text/javascript">
+			keynote.init();
+		</script>
+		<!-- ul 无限宽，调整margin，滑动窗口  >
+		<ul id="note" class="keynote">
+			<li class="kli kli1"><div style="background: #66ffcc;">1</div></li>
+			<li class="kli kli2"><div style="background: #ff99cc;">2</div></li>
+			<li class="kli kli3"><div style="background: #6699cc;">3</div></li>
+			<li class="kli kli4"><div style="background: #ff66cc;">4</div></li>
+		</ul >
+		<script type="text/javascript">
+			keynote.init({
+				ul:'note',
+				callBack:function(param){
+					//alert(param.currentli)
+					// console.log(param);
+				}
+			});
+			keynote.order([2,1],1)
+		</script-->
+		</div>
+	</body>
+</html>
