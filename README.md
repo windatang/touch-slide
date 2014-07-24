@@ -1,4 +1,3 @@
 touch-slide
 ===========
-
-平滑的切换屏幕
+Ipad slide such as keynote
